@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body{
+    width: 100%;
+    color: white;
+}
+
+main{
+    background-color:#03989e;
+}
+
+/*section-container */
+
+.section-container{
+    background-color:#03989e;
+}
+ 
+
+.container{
+    background-color:#03989e;
+    display: flex;
+    
+    width: 100%;
+    top: 0%;
+    transition: all 0.6s linear;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 60px 0px 50px;
+}
+
+.logo-container{
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img{
+   height: 90%;
+}
+
+.Navbar,
+.Navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Navbar-list{
+    gap: 30px;
+}
+
+
+#toggle-menu{
+    display: none;
+}
+
+.Navbar-list a {
+    color: white;
+}
+
+
+
+/*login-landing*/
+
+.loginlan{
+    background-color:#03989e;
+}
+
+
+.caja{
+    margin: 1% auto;
+    width: 400px;
+    padding: 50px ;
+    background: rgb(234, 238, 237);
+    text-align: center;
+    box-shadow: 10px 10px rgb(128 105 42 / 30%)
+}
+
+.imagen{
+    width: 150px;
+   
+}
+
+.iniciar{
+    width: 100%;
+    margin: 9px 0px;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+}
+
+.olvide{
+    width: 100%;
+    margin: 10px 0px;
+    background-color: transparent;
+    color: black;
+}
+
+
+.elemento{
+    width: 100%;
+    height: 30px ;
+    margin: 10px 0px;
+    padding: 8px 3px;
+    border: 3px solid#d6d6d6 ;
+    border-radius: 20px;
+    box-shadow: 1px 10px rgba(7, 7, 7, 0.3)
+}
+
+.entrar{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 8px 5px;
+    background-color: #4852ac;
+    color: #501d1d;
+    border: none;
+    border-radius: 37px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    box-shadow: 1px 10px rgba(7, 7, 7, 0.3)
+}
+
+.nocuenta{
+    width: 100%;
+    margin: 10px 0px;
+    background-color: transparent;
+    color: black;
+    border: none;
+   
+}
+
+.crear{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 8px 5px;
+    background-color: #4852ac;
+    color: #501d1d;
+    border: none;
+    border-radius: 37px;
+    letter-spacing: 5px;
+    cursor: pointer;
+    box-shadow: 1px 10px rgba(7, 7, 7, 0.3)
+}
+
+/*section-inicio*/
+
+.section-inicio{
+    background-color:#03989e;
+    margin: 0 auto;
+    padding: 70px 60px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 3rem; 
+}
+
+h3{
+    font-size: 3rem; 
+}
+
+.inicio-h1{
+    font-size: 5rem;
+}
+
+/*container-deportes*/
+
+.container-deportes{
+    background-color:#03989e;
+}
+
+.section-deportes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 100%;
+    
+}
+
+.banner-deportes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.banner-deportes img{
+    height: 70px;
+    width: 120px;
+    border-radius: 3px;
+}
+
+/*container-mbl*/
+
+.container-mbl{
+    background-color:#03989e;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.782), rgba(26, 23, 23, 0.848)), url(img/estadiobei.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid black;
+}
+
+.deportes-mbl{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 70px 0px;
+    width: 100%;
+    
+}
+
+.mbl-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.mbl-img img{
+    height: 300px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.mbl-descrip{
+    padding: 100px 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.mbl-a {
+    display: flex;
+    font-style: none;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.mbl-descrip a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.mbl-descrip h3 p {
+    color: black;
+}
+
+/*container-nba*/
+
+.container-nba{
+    background-color:#03989e;
+    background-image:  linear-gradient(rgba(4, 4, 4, 0.782), rgba(26, 23, 23, 0.848)),url(img/estadiobas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid black;
+}
+
+.deportes-nba{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 100%;
+    
+    flex-direction: row-reverse;
+}
+
+.nba-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.nba-img img{
+    height: 300px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.nba-descrip{
+    padding: 100px 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.nba-a {
+    display: flex;
+    font-style: none;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.nba-descrip a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*container-nfl*/
+
+.container-nfl{
+    background-color:#03989e;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.782), rgba(26, 23, 23, 0.848)), url(img/estadionfl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid black;
+}
+
+.deportes-nfl{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 100%;
+    
+}
+
+.nfl-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.nfl-img img{
+    height: 300px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.nfl-descrip{
+    padding: 100px 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.nfl-a {
+    display: flex;
+    font-style: none;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.nfl-descrip a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*container-nhl*/
+
+.container-nhl{
+    background-color:#03989e;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.782), rgba(26, 23, 23, 0.848)), url(img/estadionhl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid black;
+}
+
+.deportes-nhl{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 100%;
+    
+    flex-direction: row-reverse;
+}
+
+.nhl-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.nhl-img img{
+    height: 300px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.nhl-descrip{
+    padding: 100px 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.nhl-a {
+    display: flex;
+    font-style: none;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.nhl-descrip a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*container-fifa*/
+
+.container-fifa{
+    background-color:#03989e;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.782), rgba(26, 23, 23, 0.848)), url(img/estadiofifa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid black;
+}
+
+.deportes-fifa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 100%;
+    
+}
+
+.fifa-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.fifa-img img{
+    height: 290px;
+    width: 400px;
+    border-radius: 3px;
+}
+
+.fifa-descrip{
+    padding: 100px 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.fifa-a {
+    display: flex;
+    font-style: none;
+    background-color: black;
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+.fifa-descrip a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/*container-sponsor*/
+
+.container-sponsor{
+    background-color:#03989e;
+    border-top: 2px solid black;
+}
+
+.section-sponsor{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 70px 0px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.banner-sponsor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 40px;
+    gap: 30px;
+}
+
+.banner-sponsor img{
+    height: 60px;
+    width: 100px;
+    border-radius: 3px;
+}
+
+/*footer-container-*/
+
+.container-footer{
+    background-color:#03989e;
+    border-top: 2px solid white;
+}
+
+.section-footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 20vh;
+    max-width: 1300px;
+    gap: 20px;
+}
+
+.footer-legales h3{
+    font-size: 0.8rem; 
+}
+
+.footer-redes{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-redes a{
+    color: white;
+}
+
+.header-container{
+    position: sticky;
+    top:0%;
+    z-index: 9999;
+}
+
+
+
+/*Media */
+@media (max-width:992px){
+
+.header{
+    padding: 0px 50px 0px 10px;
+}
+
+.Navbar i {
+    display: block;
+}
+
+.Navbar-list{
+    position: absolute;
+    background-color: #03989e;
+    flex-direction: column;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    display: none;
+    z-index: 9999;
+    height: calc(100vh - 100px);
+}
+
+#toggle-menu:checked + .Navbar-list{
+    display: flex;
+}
+
+}
