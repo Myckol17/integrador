@@ -21,6 +21,9 @@ main{
     background-color:#03989e;
 }
 
+p{
+    text-align: justify;
+}
 /*section-container */
 
 .section-container{
@@ -31,7 +34,6 @@ main{
 .container{
     background-color:#03989e;
     display: flex;
-    
     width: 100%;
     top: 0%;
     transition: all 0.6s linear;
@@ -64,6 +66,12 @@ main{
     gap: 30px;
 }
 
+.Navbar i {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
 
 #toggle-menu{
     display: none;
@@ -81,6 +89,14 @@ main{
     background-color:#03989e;
 }
 
+.login-registro{
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .caja{
     margin: 1% auto;
@@ -126,7 +142,7 @@ main{
     width: 100%;
     margin: 10px 0px;
     padding: 8px 5px;
-    background-color: #4852ac;
+    background-color:#03989e;
     color: #501d1d;
     border: none;
     border-radius: 37px;
@@ -148,13 +164,38 @@ main{
     width: 100%;
     margin: 10px 0px;
     padding: 8px 5px;
-    background-color: #4852ac;
+    background-color: #03989e;
     color: #501d1d;
     border: none;
     border-radius: 37px;
     letter-spacing: 5px;
     cursor: pointer;
     box-shadow: 1px 10px rgba(7, 7, 7, 0.3)
+}
+
+.caja2{
+    margin: 1% auto;
+    width: 400px;
+    padding: 50px ;
+    background: rgb(234, 238, 237);
+    text-align: center;
+    box-shadow: 10px 10px rgb(128 105 42 / 30%)
+}
+
+.registro{
+    width: 100%;
+    margin: 9px 0px;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+}
+
+.datos{
+    display: flex;
+    color: black;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 /*section-inicio*/
@@ -230,7 +271,7 @@ h3{
     margin: 0;
     padding: 70px 0px;
     width: 100%;
-    
+    max-width: 1300px;
 }
 
 .mbl-img{
@@ -298,7 +339,7 @@ h3{
     margin: 0 auto;
     padding: 70px 0px;
     width: 100%;
-    
+    max-width: 1300px;
     flex-direction: row-reverse;
 }
 
@@ -324,7 +365,7 @@ h3{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    max-width: 1300px;
     gap: 20px;
 }
 
@@ -427,7 +468,7 @@ h3{
     margin: 0 auto;
     padding: 70px 0px;
     width: 100%;
-    
+    max-width: 1300px;
     flex-direction: row-reverse;
 }
 
@@ -517,7 +558,7 @@ h3{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
+    max-width: 1300px;
     gap: 20px;
 }
 
@@ -614,6 +655,27 @@ h3{
 }
 
 
+/*efectos o animaciones*/
+
+.Navbar-list{
+    cursor: pointer;
+}
+
+.banner-deportes :hover{
+    cursor: pointer;
+    animation: zooom 1s linear 0s infinite alternate;
+}
+
+@keyframes zooom{
+    from{
+        transform: scale(0.9);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
 
 /*Media */
 @media (max-width:992px){
@@ -640,6 +702,94 @@ h3{
 
 #toggle-menu:checked + .Navbar-list{
     display: flex;
+}
+
+.banner-deportes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.deportes-mbl{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mbl-img img{
+    height: 200px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.deportes-nba{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nba-img img{
+    height: 200px;
+    width: 300px;
+    border-radius: 3px;
+}
+.deportes-nfl{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nfl-img img{
+    height: 200px;
+    width: 300px;
+    border-radius: 3px;
+}
+.deportes-nhl{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nhl-img img{
+    height: 200px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.deportes-fifa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fifa-img img{
+    height: 200px;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.banner-sponsor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.footer-legales h3{
+    font-size: 0.6rem; 
 }
 
 }

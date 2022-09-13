@@ -9,24 +9,21 @@
     </head>
 
     <body class="loginlan">
-        <main class="login">
+
+        <main class="login-registro">
 
             <div class="caja">
 
-                <header>
+                    <section>
+                        <div>  
+                            <a href="./index.html"> <img class="imagen" src="./img/maba2.jpg" alt="logo login" /> </a>
+                        </div>
 
-                    <div>  
-                        <img class="imagen" src="./img/login candado.png" alt="logo login"/>
-                    </div>
-
-                    <div>
-                        <h2 class="iniciar">Iniciar Sesión</h2>
-                    </div>
-
-                </header>
-
-                
-
+                        <div>
+                            <h2 class="iniciar">Iniciar Sesión</h2>
+                        </div>
+                    </section>
+                                
                     <section>
                         <div>
                              <input class="elemento" type="email" id="email" name="email" placeholder="Email" required/>  
@@ -46,17 +43,60 @@
                             </button>
                         </div>
 
-                        <div>
-                            <p class="nocuenta">¿No tienes cuenta?</p>
+                    </section>
+                
+            </div>
+
+            <div class="caja2">
+
+                    <section>
+                        <div>  
+                            <a href="./index.html"> <img class="imagen" src="./img/maba2.jpg" alt="logo login" /> </a>
                         </div>
+
+                        <div>
+                            <h2 class="registro">Registrate</h2>
+                        </div>
+                    </section>
+
+                    <section class="datos">
+                        <div class ="Datos-Nombre">
+                            <label for="nombre"> Nombre:</label>
+                            <input type="text" id="nombre" placeholder="aqui va tu nombre"/>
+                        </div>
+
+                        <div class ="Datos-Apellido">
+                            <label>Apellidos:</label>
+                            <input type="text" id="apellidos" placeholder="aqui van tus apellidos"/>
+                        </div>
+                        
+                        <div class ="Datos-Genero">
+                            <label>Sexo:</label>
+                            <input type="radio" id="genero" name="genero" value="hombre"/>
+                            <label>Hombre</label>
+                            <input type="radio" id="hombre" name="genero" value="mujer"/>
+                            <label>Mujer</label>
+                        </div>
+                        
+                        <div class ="Datos-correo">
+                            <label>Correo:</label>
+                            <input type="text" id="correo" placeholder="aqui va tu correo"/>
+                        </div>
+                        
+                        <form>
+                            <input type="checkbox">
+                            <label>Deseo recibir información sobre novedades y ofertas</label><br>
+                            <input type="checkbox">
+                            <label>Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+                        </form>
+                    </section>
 
                         <div>
                             <button class="crear">
                                 Crear cuenta
                             </button>
                         </div>
-                    </section>
-                
+
             </div>
 
         </main>
