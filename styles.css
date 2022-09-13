@@ -792,4 +792,19 @@ h3{
     font-size: 0.6rem; 
 }
 
+.login-registro{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja{
+    margin: 1% auto;
+    width: 300px;
+    padding: 50px ;
+}
+.caja2{
+    margin: 1% auto;
+    width: 300px;
+    padding: 50px ;
+}
 }
